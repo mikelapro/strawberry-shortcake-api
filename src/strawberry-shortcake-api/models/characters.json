@@ -1,0 +1,303 @@
+[
+    {
+        "name": "Strawberry Shortcake",
+        "nickName": "Strawbs",
+        "age": "12-14",
+        "gender": "Female",
+        "relatives": [
+            {
+                "name": "Apple Dumplin",
+                "gender": "Female",
+                "species": "Human"
+            }
+        ],
+        "theme": "Strawberries",
+        "occupation": "Baker",
+        "hairColor": "Pinkish red",
+        "eyeColor": "Green",
+        "picture": "https://static.wikia.nocookie.net/strawberryshortcake/images/b/bf/Display-moranguinho.png/revision/latest?cb=20180228060242",
+        "goal": "To become the best baker",
+        "like": [
+            "Baking",
+            "Gardening",
+            "Cooking",
+            "Riding Horses",
+            "Dress Up",
+            "Acting",
+            "Playing Pretend",
+            "Reading",
+            "Pets",
+            "Fashion"
+        ],
+        "disLike": [
+            "The color grey",
+            "Arguing",
+            "Herbal Tea"
+        ],
+        "friends": [
+            {
+                "name": "Orange Blossom",
+                "gender": "Female",
+                "species": "Human"
+            },
+            {
+                "name": "Blueberry Muffin",
+                "gender": "Female",
+                "species": "Human"
+            },
+            {
+                "name": "Cherry Jam",
+                "gender": "Female",
+                "species": "Human"
+            }
+        ],
+        "enemies": null,
+        "generation": "2009",
+        "pets": [
+            {
+                "name": "Custard",
+                "gender": "Female",
+                "species": "Cat"
+            },
+            {
+                "name": "Pupcake",
+                "gender": "Male",
+                "species": "Dog"
+            }
+        ],
+        "personality": "Strawberry is fun and feminine, and she loves hanging out with her friends in Berry Bitty City. She loves to help her friends out of tough spots and is supportive and helpful. While she runs her Berry Café, she's always preparing to lend a helping hand or go on an adventure. Her optimism is communicable and she always sees big possibilities in everything. She is kind and patient but can occasionally get frustrated and whine and pout. She's a hard worker and is often busy.",
+        "appearance": "Strawberry's cap resembles a strawberry with a green visor design and a leaf on the top. She has bright red-colored hair. She wears a short-sleeved white crop top with green diamonds and a strawberry design and a pink minidress with a red polka-dot design. Her tights are white and green striped. She wears red Mary Jane shoes. She wears different outfits like Halloween.",
+        "voiceActor": "Anna Cummer (2009-2015)",
+        "summary": "Strawberry Shortcake is the eponymous protagonist of the Strawberry Shortcake franchise. She is stated to be the 'unofficialprincess' of 'Strawberry-land' and is often seen wearing a pink hat with a strawberry design. Strawberry Shortcake is a cartoon character originally used in greeting cards but was later expanded to include dolls, posters, and numerous products. Then, TV specials, and two very popular television series. In the 1980s version of the franchise, she lives in a shortcake, while in the 2003 version, she lives in a strawberry home.",
+        "species": "Human"
+    },
+    {
+        "name": "Orange Blossom",
+        "nickName": "",
+        "age": "12-14",
+        "gender": "Female",
+        "relatives": null,
+        "theme": "Oranges",
+        "occupation": "General Store Owner",
+        "hairColor": "Brown",
+        "eyeColor": "Brown",
+        "picture": "https://static.wikia.nocookie.net/strawberryshortcake/images/7/70/BBAOrange2009.jpg/revision/latest?cb=20230808102056",
+        "goal": null,
+        "like": [
+            "Juicing",
+            "Superheroes",
+            "Gardening",
+            "Fruit",
+            "Rollerblading",
+            "Sports and Games",
+            "Competition",
+            "Art",
+            "Sewing",
+            "Climbing Trees"
+        ],
+        "disLike": [
+            "Arguing",
+            "Disrespecting Mother Earth",
+            "Not following a recipe",
+            "Yelling",
+            "When she's being talked over",
+            "The disruptive moviegoer in"
+        ],
+        "friends": [
+            {
+                "name": "Strawberry Shortcake",
+                "gender": "Female",
+                "species": "Human"
+            },
+            {
+                "name": "Lemon Meringue",
+                "gender": "Female",
+                "species": "Human"
+            }
+        ],
+        "enemies": null,
+        "geneation": "2009",
+        "pets": [
+            {
+                "name": "Marmalade",
+                "gender": "Female",
+                "species": "Dog"
+            }
+        ],
+        "personality": "Orange blossom is a store runner and great friend to those in need. She's shown to be brave and happy, though also stubborn if she's really passionate about something. She also has a wild imagination, and paired with occasional sensitivity and her stubborness she can freak herself out and be hard to calm down or talk out of plans. She is also shown to go along with plans others make if she thinks they have her best interest in mind, a good example being in the Berry Bitty Comics when tries promoting her on social media.",
+        "appearance": "Orange now has very long brown hair with a slight wave and much lighter skin. She wears a white t-shirt under an orange-and-peach-colored top with a white line containing an orange in a flower, a white belt with an orange line in the middle, a skirt resembling orange slices, a pair of light orange and white striped leggings, a pair of colored-peach boots with hot pink soles and orange ornaments, and an orange blossom flower clip with an orange at the side on her hair.",
+        "voiceActor": "Janyse Jaud (2009)",
+        "summary": "Orange Blossom is a main character who appears in all generations of the Strawberry Shortcake franchise. Her theme is oranges. She is always the best friend of Strawberry. Though her interests often change she is usually a very sweet character in all generations and a loyal, selfless friend.",
+        "species": "Human"
+    },
+    {
+        "name": "Apple Dumplin'",
+        "nickName": "unknown",
+        "age": "12-14",
+        "gender": "Female",
+        "relatives": [
+            {
+                "name": "Strawberry Shortcake",
+                "gender": "Female",
+                "species": "Human"
+            }
+        ],
+        "theme": "Apples",
+        "occupation": "unknown",
+        "hairColor": "Blonde",
+        "eyeColor": "Grey-silver",
+        "picture": "https://static.wikia.nocookie.net/strawberryshortcake/images/d/d7/Appledumplingnew.jpg/revision/latest?cb=20210417195815",
+        "goal": null,
+        "like": null,
+        "disLike": null,
+        "friends": [
+            {
+                "name": "Lemon Meringue",
+                "gender": "Female",
+                "species": "Human"
+            },
+            {
+                "name": "Sour Grapes",
+                "gender": "Female",
+                "species": "Human"
+            }
+        ],
+        "enemies": null,
+        "geneation": "2009",
+        "pets": [
+            {
+                "name": "Teatime Turtle",
+                "gender": "Female",
+                "species": "Turtle"
+            }
+        ],
+        "personality": "Apple is shown as a busy bodied blogger who loves to help her cousin, though can get off track and forget things due to her excitable nature. She's shown as resourceful too with a knack for fixing machinery, being able to create machines to assist her friends or have fun such as a rainbow smoke machine, disco light system, and speakers hooked up to a phone call with Sweet Grapes and Sour Grapes, though she often doesn't think things through fully. She also loves telling stories of her adventures and is considered great at it. A recurring joke is her losing her turtle Tea Time in her adventures. Her hunt for adventure often clouds her judgement and is why she never stayed with anybody very long until eventually deciding to live in Berry Bitty City.",
+        "appearance": "Apple has blonde hair and bangs, with a side braid held in place by a plastic apple barrette. She has strangely unique grey-silver eyes. She wears a red knit hipster slouchy beanie. She, like in 2007, wears a plain white tee and has a yellow vest with a casual green belt over it. She has a red plaid skirt and red boots. Her leggings are pale yellow and white.",
+        "voiceActor": "Rebecca Shoichet (2009)",
+        "summary": "Apple Dumplin' is a baby character from the Strawberry Shortcake franchise. She is voiced by Rebecca Shoichet. She is usually related to Strawberry in some form.",
+        "species": "Human"
+    },
+    {
+        "name": "Raspberry Torte",
+        "nickName": "unknown",
+        "age": "12-14",
+        "gender": "Female",
+        "relatives": "",
+        "theme": "Raspberries",
+        "occupation": "Fashion Designer and Tailor",
+        "hairColor": "Pink/Raspberry",
+        "eyeColor": "Magenta",
+        "picture": "https://static.wikia.nocookie.net/strawberryshortcake/images/2/27/Bio_rt.png/revision/latest/scale-to-width-down/153?cb=20170622133935",
+        "goal": null,
+        "like": null,
+        "disLike": null,
+        "friends": [
+            {
+                "name": "Lemon Meringue",
+                "gender": "Female",
+                "species": "Human"
+            }
+        ],
+        "enemies": null,
+        "geneation": "2009",
+        "pets": [
+            {
+                "name": "Chiffon",
+                "gender": "Female",
+                "species": "Dog"
+            }
+        ],
+        "personality": "She changed from a sporty girl into a fashionista and become a bit of a ditz. Her quiet tone was heard at times and she had a dog named Chiffon. She owns a fashion boutique called Fresh Fashions where she sells clothes she designed and made. Her favorite food is bigfoot ice cream, spaghetti, or a sandwich. She is very creative and artistic with her designs. She often teams up with Lemon since hair and fashion go hand in hand in big projects or makeovers.",
+        "appearance": "Raspberry Torte is a young girl with fair skin and round magenta eyes. Her straight hair is also magenta and has side-swept bangs, held in place by a green headband with a raspberry on it. She wears a short fuchsia dress with a green sash and green sleeves, covered by a short-sleeved magenta bolero jacket. She has pink-and-white striped leggings with magenta Mary Janes and often carries a small magenta purse.",
+        "voiceActor": "Ingrid Nilson (2009)",
+        "summary": "Raspberry Torte, originally known as Raspberry Tart in her debut in the 1980's series is one of the main characters in the Strawberry Shortcake series. She has appeared in every series so far.",
+        "species": "Human"
+    },
+    {
+        "name": "Sour Grapes",
+        "nickName": "unknown",
+        "age": "12-14",
+        "gender": "Female",
+        "relatives": [
+            {
+                "name": "Sweet Grapes",
+                "gender": "Female",
+                "species": "Human"
+            }
+        ],
+        "theme": "Grapes",
+        "occupation": "Chef",
+        "hairColor": "Lime green and violet",
+        "eyeColor": "Green and Lavender",
+        "picture": "https://static.wikia.nocookie.net/strawberryshortcake/images/c/cb/Sour_Grapes_.jpg/revision/latest?cb=20201028171807",
+        "goal": null,
+        "like": null,
+        "disLike": null,
+        "friends": [
+            {
+                "name": "Sweet Grapes",
+                "gender": "Female",
+                "species": "Human"
+            },
+            {
+                "name": "Strawberry Shortcake",
+                "gender": "Female",
+                "species": "Human"
+            },
+            {
+                "name": "Orange Blossom",
+                "gender": "Female",
+                "species": "Human"
+            },
+            {
+                "name": "Apple Dumplin'",
+                "gender": "Female",
+                "species": "Human"
+            }
+        ],
+        "enemies": null,
+        "geneation": "2009",
+        "pets": null,
+        "personality": "Sour Grapes came into Berry Bitty Adventures as a last-minute thought to replace tomboy, antagonistic characters such as Peppermint Fizz and Raspberry Torte (2003). Sour Grapes is much like her namesake. She appears to be generally in a foul mood and unpleasant to be around. She is often grumpy, and has a feisty temper that can flare up any time, but she isn't that mean when you get to know her. She's a realist, not a pessimist. She has spunk and edge and does things with gusto and likes to seem tough and brave. She's mischievous and likes to play pranks and trick people, similar to many antagonistic characters of the franchise. She is competitive and energetic and is protective of her sister, Sweet Grapes, and always tries to help her. They act like polar opposites, but they are best friends and love each other, a trope often used with twin characters. Sour Grapes starts to seem a bit more 'sweet' in comparison to her cousin, the greedy and social media addicted Raisin Cane. Sour Grapes is often annoyed and groans at the schemes of her cousin. She is more intelligent and clever than the ditsy, head in the clouds Sweet. Sour's grumpy competitive personality makes her very similar to Angel Cake personality wise.",
+        "appearance": "Sour Grapes is a pale skinned girl with ombre lavender and lime eyes. She has natural purple hair in a choppy bob, with lime green highlights. She has a black headband with a grape on it, her dress is green and purple striped with black sleeves. She has white and and black striped leggings, black combat boots, and layered necklaces. Sometimes, she wears black athletic shorts like when camping. She has a very punk and edgy style, and is the third tomboy butch character in Strawberry Shortcake, the first being Peppermint Fizz and then Raspberry Torte, and being followed by the 2021 version of Orange Blossom and the mechanic from the 2021 series. She wears green eyeshadow. She is the second character in the franchise to have highlights.",
+        "voiceActor": "Diana Kaarina, Meg Roe (2009)",
+        "summary": "Sour Grapes is a punk teen girl introduced in 2015 in Season Four of Berry Bitty Adventures and has the spotlight as a main character in the short-lived 2018 series of 2D animated YouTube special shorts. Her twin sister is Sweet Grapes and they run a food truck together. Her scheming cousin is Raisin Cane. This Sour Grapes is not a villain, thus being completely different from 1980s and 2003 Sour Grapes. She is tough, competitive, and butchy which makes her seem like the kinder 2009 version of Peppermint Fizz. The 2021 version is monotone, bland, and mostly mute, although she does show some emotion now and then. She rarely speaks with a thick Australian accent. Her style is more goth instead of punk now.",
+        "species": "Human"
+    },
+    {
+        "name": "Sweet Grapes",
+        "nickName": "unknown",
+        "age": "12-14",
+        "gender": "Female",
+        "relatives": [
+            {
+                "name": "Sour Grapes",
+                "gender": "Female",
+                "species": "Human"
+            }
+        ],
+        "theme": "Grapes",
+        "occupation": "Dessert Food Truck Baker",
+        "hairColor": "Ombre purple and lavender",
+        "eyeColor": "Lavender",
+        "picture": "https://static.wikia.nocookie.net/strawberryshortcake/images/3/37/36e95cfc123cac071c8eea3a20418efd.jpg/revision/latest?cb=20221018185136",
+        "goal": null,
+        "like": null,
+        "disLike": null,
+        "friends": [
+            {
+                "name": "Sour Grapes",
+                "gender": "Female",
+                "species": "Human"
+            }
+        ],
+        "enemies": null,
+        "geneation": "2009",
+        "pets": null,
+        "personality": "Like her name, Sweet Grapes is very sweet and kind. She can come off as quiet when she speaks, but she is by no means shy or anxious around others. She seems to care for her sister but has to remind her to try to be friendly or kind. She seems to get flustered easily and may admit to things that she didn't necessarily mean to say or think as a result.",
+        "appearance": "Sweet is a pale-fair-skinned girl with eyes of lavender with a pale pink gradient towards the bottom. She wears very pale pink lipstick and has a pair of black glasses over her eyes. She has very long, curly hair in an ombre coloring of purple, pale fuchsia, pink, and frosted pink. On the right side of her head is a double bow with the bottom being powder blue and the top a striping of lilac and white. At the center are giant purple pearls clumped together to resemble grapes.  She wears a white top with stripes of purple sequins. The right sleeve is worn below her shoulder to reveal a powder blue strap. In the lower-left corner is a purple grape design. She also wears a frilly skirt of powder blue, white, and purple. Her tights are lilac and white stripes and she wears white flats with purple bottoms and grape accessories on the toe.",
+        "voiceActor": "Andrea Libman (2009)",
+        "summary": "Sweet Grapes is one of the new Berry Girls introduced in Season 4 of Berry Bitty Adventures. She is the twin sister of Sour Grapes.",
+        "species": "Human"
+    }
+]
