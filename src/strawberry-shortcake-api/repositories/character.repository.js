@@ -1,10 +1,17 @@
 // Repository: Es la capa que controla la persistencia de datos en una base de datos.
+
+//#region Imports
+
 const mongoose = require( 'mongoose' );
 
 const dataModelName = 'Character'; // Nombre del modelo de base de datos.
 const collectionName = 'characters'; // Nombre de la collection de la base de datos (igual al que está en la base de datos).
 const schema = new mongoose.Schema( {}, { strict: false, versionKey: false } ); // Mongoose Schema (sin schema, libre!).
 const DataModel = mongoose.model( dataModelName, schema, collectionName ); // Mongoose model (da operaciones de la base de datos).
+
+//#endregion
+
+//#region Methods
 
 const create = async ( character ) => {
     const characterCreatedDoc = await DataModel.create( character );
@@ -37,6 +44,8 @@ const update = async ( character ) => {
 const remove = async ( id ) => {
     await DataModel.findByIdAndRemove( { _id: id } ).exec();
 }
+
+//#endregion
 
 module.exports = {
     create,

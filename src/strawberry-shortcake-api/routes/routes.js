@@ -1,34 +1,17 @@
-// module.exports = ( api ) => {
-//     const controllers = require( '../controllers/controllers.js' );
-
-//     // Endpoint: GET /
-//     api.get( '/', controllers.getApiInfo ); // TODO: Este no anda... moverlo a index. Ver:
-//     // TODO: https://github.com/suhailkakar/Node-Express-MongoDB-Restful-CRUD-API/blob/main/server.js
-
-//     // Endpoint: GET /characters - Ej: http://localhost:3000/characters
-//     api.get( '/characters', controllers.getCharacters );
-
-//     // Endpoint: GET /characters/:id - Ej: http://localhost:3000/characters/7
-//     api.get( '/characters/:id', controllers.getCharacter );
-
-//     // Endpoint: POST /characters
-//     api.post( '/characters', controllers.addCharacter );
-
-//     // Endpoint: DELETE /characters/:id - Ej: http://localhost:3000/characters/7
-//     api.delete( '/characters/:id', controllers.deleteCharacter );
-
-//     // Endpoint: PUT /characters/:id - Ej: http://localhost:3000/characters/7
-//     api.put( '/characters/:id', controllers.updateCharacter );
-
-//     api.get( '/teapot', controllers.imATeapot );
-
-//     // Endpoint: GET /* - Ej: http://localhost:3000/culquiera
-//     api.get( '/*', controllers.notFound );
-// }
+//#region Imports
 
 const controllers = require( '../controllers/controllers.js' );
 const { Router } = require( 'express' );
+
+//#endregion
+
+//#region Declarations
+
 const router = Router();
+
+//#endregion
+
+//#region Routes
 
 // router.get( '/', controllers.getApiInfo );
 router.get( '/', controllers.getApiInfo );
@@ -55,5 +38,7 @@ router.get( '/teapot', controllers.imATeapot );
 
 // Endpoint: GET /* - Ej: http://localhost:3000/culquiera
 router.get( '/*', controllers.notFound );
+
+//#endregion
 
 module.exports = router;

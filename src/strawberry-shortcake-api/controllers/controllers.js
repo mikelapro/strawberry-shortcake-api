@@ -1,6 +1,12 @@
 // Controllers = lógica de los endpoints.
 
+//#region Imports
+
 const usecases = require( '../usecases/index.js' );
+
+//#endregion
+
+//#region Controllers
 
 const getApiInfo = async ( req, res ) => {
     res.status( 200 ).json( usecases.getApiInfo() );
@@ -54,6 +60,8 @@ const imATeapot = ( req, res ) => {
 const notFound = ( req, res ) => {
     res.status( 404 ).json( { Error: 'Ruta no encontrada' } );
 }
+
+//#endregion
 
 module.exports = {
     getApiInfo,

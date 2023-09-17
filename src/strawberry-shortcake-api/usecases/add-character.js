@@ -1,18 +1,14 @@
+//#region Imports
+
 const Character = require( '../models/character.js' );
 const CharacterBase = require( '../models/character-base.js' );
-// const state = require( '../store/store.js' );
 const characterRepository = require( '../repositories/character.repository.js' );
 
+//#endregion
+
+//#region Usecase
+
 const addCharacter = ( character ) => {
-
-    // let newId;
-    // if( state.characters == undefined ) {
-    //     newId = 1;
-    //     state.characters = [];
-    // } else {
-    //     newId = state.characters.length + 1;
-    // }
-
     const newCharacter = new Character();
 
     //newCharacter.id = newId; //* NOTE: Ahora el id lo maneja Mongo.
@@ -115,5 +111,7 @@ const addCharacter = ( character ) => {
     // Response.
     return newCharacter;
 }
+
+//#endregion
 
 module.exports = { addCharacter }

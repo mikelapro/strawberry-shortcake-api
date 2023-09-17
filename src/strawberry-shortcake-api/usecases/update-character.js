@@ -1,12 +1,15 @@
-const state = require( '../store/store.js' );
-const Character = require( '../models/character.js' );
+//#region Imports
+
 const NotFoundError = require( '../errors/NotFoundError.js' );
 const CharacterBase = require( '../models/character-base.js' );
 const characterRepository = require( '../repositories/character.repository.js' );
 
+//#endregion
+
+//#region Usecase
+
 const updateCharacter = async ( id, character ) => {
     // Obtiene el character actual de la base de datos.
-    // const actualCharacter = state.characters.find( object => object.id === id );
     const actualCharacter = await characterRepository.getById( id );
 
     if ( actualCharacter == undefined || actualCharacter == null ) {
@@ -107,6 +110,8 @@ const updateCharacter = async ( id, character ) => {
 
     return updatedCharacter;
 }
+
+//#endregion
 
 module.exports = {
     updateCharacter

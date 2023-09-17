@@ -1,10 +1,15 @@
-// const state = require( '../store/store.js' );
+//#region Imports
+
 const characterRepository = require( '../repositories/character.repository.js' );
 
+//#endregion
+
+//#region Usecase
+
 const deleteCharacter = async ( id ) => {
-    // const index = state.characters.findIndex( char => char.id === id );
-    // state.characters.splice( index, 1 );
     await characterRepository.remove( id );
 }
+
+//#endregion
 
 module.exports = { deleteCharacter }

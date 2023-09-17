@@ -1,12 +1,17 @@
-// const state = require( '../store/store.js' );
+//#region Imports
+
 const characterRepository = require( '../repositories/character.repository.js' );
 
-// Proceso.
+//#endregion
+
+//#region Usecase
+
 const getCharacter = async ( id ) => {
-    // const character = state.characters.find( object => object.id === id );
     const character = await characterRepository.getById( id );
 
     return character;
 }
+
+//#endregion
 
 module.exports = { getCharacter }

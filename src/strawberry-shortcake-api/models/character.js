@@ -80,11 +80,7 @@ module.exports = class Character {
 }
 
 /* 
-
 Data:
-
 Ingles: Strawberry Shortcake (Pastelito de frutilla) > https://en.wikipedia.org/wiki/Strawberry_Shortcake
-
 Source: https://strawberryshortcake.fandom.com/wiki/Strawberry_Shortcake%27s_Berry_Bitty_Adventures
-
 */

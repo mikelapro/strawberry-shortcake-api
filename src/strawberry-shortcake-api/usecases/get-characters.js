@@ -1,12 +1,18 @@
-// const state = require( '../store/store.js' );
+//#region Imports
+
 const characterRepository = require( '../repositories/character.repository.js' );
 
+//#endregion
+
+//#region Usecase
+
 const getCharacters = async () => {
-    // return state.characters;
     const characters = await characterRepository.getAll( {} );
 
     return characters;
 }
+
+//#endregion
 
 module.exports = {
     getCharacters
