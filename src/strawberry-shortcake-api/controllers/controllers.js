@@ -2,10 +2,8 @@
 
 const usecases = require( '../usecases/index.js' );
 
-const getApiInfo = ( req, res ) => {
-    ( req, res ) => {
-        res.status( 200 ).json( usecases.getApiInfo() );
-    }
+const getApiInfo = async ( req, res ) => {
+    res.status( 200 ).json( usecases.getApiInfo() );
 }
 
 const getCharacters = async ( req, res ) => {
@@ -14,7 +12,7 @@ const getCharacters = async ( req, res ) => {
 
 const getCharacter = async ( req, res ) => {
     // const id = parseInt( req.params.id ); // Convierte el parámetro id en number.
-    const id =  req.params.id; 
+    const id = req.params.id;
     res.status( 200 ).json( await usecases.getCharacter( id ) );
 }
 
@@ -23,7 +21,12 @@ const addCharacter = ( req, res ) => {
     res.status( 200 ).json( usecases.addCharacter( req.body ) );
 }
 
-const deleteCharacter = async( req, res ) => {
+const addCharacters = ( req, res ) => {
+    usecases.checkApiKey( req.query.apiKey );
+    res.status( 200 ).json( usecases.addCharacters( req.body ) );
+}
+
+const deleteCharacter = async ( req, res ) => {
     usecases.checkApiKey( req.query.apiKey );
 
     // const id = parseInt( req.params.id );
@@ -57,6 +60,7 @@ module.exports = {
     getCharacters,
     getCharacter,
     addCharacter,
+    addCharacters,
     deleteCharacter,
     updateCharacter,
     imATeapot,

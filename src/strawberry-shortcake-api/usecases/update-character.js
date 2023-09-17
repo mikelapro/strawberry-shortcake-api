@@ -36,6 +36,7 @@ const updateCharacter = async ( id, character ) => {
     actualCharacter.voiceActor = character.voiceActor;
     actualCharacter.summary = character.summary;
     actualCharacter.species = character.species;
+    actualCharacter.source = character.source;
 
     // Relatives.
     if ( Array.isArray( character.relatives ) ) {

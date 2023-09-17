@@ -39,6 +39,7 @@ const addCharacter = ( character ) => {
     newCharacter.voiceActor = character.voiceActor;
     newCharacter.summary = character.summary;
     newCharacter.species = character.species;
+    newCharacter.source = character.source;
 
     // Relatives.
     if ( Array.isArray( character.relatives ) ) {

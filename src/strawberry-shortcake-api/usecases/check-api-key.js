@@ -6,7 +6,7 @@ const apiKey = process.env.APIKEY;
 const checkApiKey = ( userApiKey ) => {
     if ( userApiKey != apiKey ) {
         throw new UnauthorizedError();
-    } 
+    }
 }
 
 module.exports = {

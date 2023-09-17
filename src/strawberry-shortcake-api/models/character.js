@@ -23,6 +23,7 @@ module.exports = class Character {
     voiceActor;
     summary;
     species;
+    source;
 
     constructor( id,
         season,
@@ -47,7 +48,8 @@ module.exports = class Character {
         appearance,
         voiceActor,
         summary,
-        species ) {
+        species,
+        source ) {
 
         this._id = id;
         this.season = season;
@@ -73,6 +75,7 @@ module.exports = class Character {
         this.voiceActor = voiceActor;
         this.summary = summary;
         this.species = species;
+        this.source = source;
     }
 }
 
@@ -82,7 +85,6 @@ Data:
 
 Ingles: Strawberry Shortcake (Pastelito de frutilla) > https://en.wikipedia.org/wiki/Strawberry_Shortcake
 
-Source: https://strawberryshortcake.fandom.com/wiki/Raspberry_Torte
-    https://strawberryshortcake.fandom.com/wiki/Strawberry_Shortcake%27s_Berry_Bitty_Adventures
+Source: https://strawberryshortcake.fandom.com/wiki/Strawberry_Shortcake%27s_Berry_Bitty_Adventures
 
 */
