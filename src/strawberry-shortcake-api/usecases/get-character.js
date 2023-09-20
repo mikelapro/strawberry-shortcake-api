@@ -10,8 +10,8 @@ const getCharacter = async ( id ) => {
     const character = await characterRepository.getById( id );
 
     return character;
-}
+};
 
 //#endregion
 
-module.exports = { getCharacter }
+module.exports = { getCharacter };

@@ -7,9 +7,9 @@ const state = require( '../store/store.js' );
 //#region Usecase
 
 const inicializarCharacters = () => {
-  state.characters = [];
-}
+    state.characters = [];
+};
 
 //#endregion
 
-module.exports = { inicializarCharacters }
+module.exports = { inicializarCharacters };

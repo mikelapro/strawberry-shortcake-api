@@ -2,7 +2,8 @@
 module.exports = {
     'env': {
         'browser': true,
-        'es2021': true
+        'es2021': true,
+        'node': true
     },
     'extends': 'eslint:recommended',
     'overrides': [
@@ -12,7 +13,7 @@ module.exports = {
         'sourceType': 'module'
     },
     'rules': {
-        'indent': ['error', 4], // Indentación con 4 espacios.
+        'indent': ['error', 4, { 'SwitchCase': 1 }], // Indentación con 4 espacios.
         'linebreak-style': ['warn', 'windows'],
         'quotes': ['warn', 'single'], // Comilla simple para strings.
         'semi': ['error', 'always'], // Requiere ;.

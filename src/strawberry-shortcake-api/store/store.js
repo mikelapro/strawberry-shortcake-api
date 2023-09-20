@@ -17,9 +17,9 @@ tocar el placard).
 const state = {
     // Propiedades = Sectores/estantes/cajones del placard (array de abrigos).
     characters: []
-}
+};
 
 // TODO: No exportar el state, hacer funciones de acceso.
 module.exports = {
     state
-}
+};

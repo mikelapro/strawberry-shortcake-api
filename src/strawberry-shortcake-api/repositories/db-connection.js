@@ -21,7 +21,7 @@ const connect = async () => {
         console.log( `MongoDB connection fail: ${err}` );
         process.exit( 1 );
     }
-}
+};
 
 //#endregion
 

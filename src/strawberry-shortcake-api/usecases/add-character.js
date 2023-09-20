@@ -110,8 +110,8 @@ const addCharacter = ( character ) => {
 
     // Response.
     return newCharacter;
-}
+};
 
 //#endregion
 
-module.exports = { addCharacter }
+module.exports = { addCharacter };

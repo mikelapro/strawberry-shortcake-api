@@ -17,10 +17,10 @@ const checkApiKey = ( userApiKey ) => {
     if ( userApiKey != apiKey ) {
         throw new UnauthorizedError();
     }
-}
+};
 
 //#endregion
 
 module.exports = {
     checkApiKey
-}
+};

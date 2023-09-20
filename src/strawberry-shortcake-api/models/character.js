@@ -77,7 +77,7 @@ module.exports = class Character {
         this.species = species;
         this.source = source;
     }
-}
+};
 
 /* 
 Data:

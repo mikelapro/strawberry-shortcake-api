@@ -8,4 +8,4 @@ module.exports = class CharacterBase {
         this.gender = gender;
         this.species = species;
     }
-}
+};

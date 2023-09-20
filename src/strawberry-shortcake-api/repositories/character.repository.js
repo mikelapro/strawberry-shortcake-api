@@ -20,12 +20,12 @@ const create = async ( character ) => {
     // https://mongoosejs.com/docs/api/document.html#Document.prototype.toObject().
     const characterCreated = characterCreatedDoc.toObject();
     return characterCreated;
-}
+};
 
 const getById = async ( id ) => {
     const character = await DataModel.findById( id ).lean().exec();
     return character;
-}
+};
 
 const getAll = async ( query ) => {
     const characters = await DataModel.find( query ).lean().exec(); // .limit(15)
@@ -34,16 +34,16 @@ const getAll = async ( query ) => {
     // NOTE: .lean converts document to POJO (have el .toObject()).
     //const characterDocs = await DataModel.find( query ).exec(); 
     //var characters = characterDocs.map( ( model ) => model.toObject() );
-}
+};
 
 const update = async ( character ) => {
     const characterUpdated = await DataModel.findByIdAndUpdate( { _id: character._id }, character, { new: true } ).lean().exec();
     return characterUpdated;
-}
+};
 
 const remove = async ( id ) => {
     await DataModel.findByIdAndRemove( { _id: id } ).exec();
-}
+};
 
 //#endregion
 
@@ -53,4 +53,4 @@ module.exports = {
     getAll,
     update,
     remove
-}
+};

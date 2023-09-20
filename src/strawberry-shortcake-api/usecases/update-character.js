@@ -109,10 +109,10 @@ const updateCharacter = async ( id, character ) => {
     const updatedCharacter = await characterRepository.update( actualCharacter );
 
     return updatedCharacter;
-}
+};
 
 //#endregion
 
 module.exports = {
     updateCharacter
-}
+};

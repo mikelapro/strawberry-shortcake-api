@@ -8,8 +8,8 @@ const characterRepository = require( '../repositories/character.repository.js' )
 
 const deleteCharacter = async ( id ) => {
     await characterRepository.remove( id );
-}
+};
 
 //#endregion
 
-module.exports = { deleteCharacter }
+module.exports = { deleteCharacter };

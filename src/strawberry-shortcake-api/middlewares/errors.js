@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const globalErrorHandler = ( err, req, res, next ) => {
     // Responde un json, pero indicando que es un error.
     // Códigos de respuesta http: https://www.semrush.com/blog/http-status-codes/.
@@ -24,8 +25,8 @@ const globalErrorHandler = ( err, req, res, next ) => {
             } );
             break;
     }
-}
+};
 
 module.exports = {
     globalErrorHandler
-}
+};

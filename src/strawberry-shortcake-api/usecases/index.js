@@ -19,4 +19,4 @@ module.exports = {
     getApiInfo,
     updateCharacter,
     checkApiKey
-}
+};
