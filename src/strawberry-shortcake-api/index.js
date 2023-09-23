@@ -39,12 +39,12 @@ api.use( express.json() );
 api.use( require( './routes/routes.js' ) );
 
 // Middleware - Tratamiento de errores global.
-// *NOTE: Tiene que estar luego de los endpoints.
+// *NOTE: Tiene que estar luego de los endpoints/routes.
 api.use( globalErrorHandler );
 
-// Oreja escuchando en el puerto {port}.
+// Oreja escuchando en el puerto {port} los request al api.
 api.listen( port, () => {
-    console.log( `Example API listening on port ${port}` );
+    console.log( `API listening on port ${port}` );
     console.log( `Http://localhost:${port}` );
     console.log( `Http://localhost:${port}/teapot` );
 } );

@@ -1,0 +1,4 @@
+# Declaración de variables de entorno.
+PORT=3000
+APIKEY=myapikey
+MONGO_URI=mongodb+srv://myUserName:myPassword@my-cluster.blkcxhp.mongodb.net/myDataBase
