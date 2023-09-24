@@ -1,3 +1,6 @@
+/**
+ * Modelo para un character de Strawberry Shortcake.
+ */
 module.exports = class Character {
     _id;
     season;

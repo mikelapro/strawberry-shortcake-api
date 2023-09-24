@@ -8,6 +8,14 @@ const characterRepository = require( '../repositories/character.repository.js' )
 
 //#region Usecase
 
+/**
+ * Actualiza el character correspondiente al id especificado con los datos del character 
+ * recibido (excepto el id).
+ * @param {String} id Identificador del character a modificar.
+ * @param {Character} character Datos para tomar las modificaciones.
+ * @throws {NotFoundError} Error personalizado para lanzar cuando no se encuentre un character.
+ * @returns El character actualizado.
+ */
 const updateCharacter = async ( id, character ) => {
     // Obtiene el character actual de la base de datos.
     const actualCharacter = await characterRepository.getById( id );

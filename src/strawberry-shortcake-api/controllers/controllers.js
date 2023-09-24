@@ -61,7 +61,7 @@ const deleteCharacter = async ( req, res ) => {
 };
 
 /**
-Actualiza el character correspondiente al id especificado con los datos del character 
+ * Actualiza el character correspondiente al id especificado con los datos del character 
  * recibido (excepto el id).
  */
 const updateCharacter = async ( req, res ) => {

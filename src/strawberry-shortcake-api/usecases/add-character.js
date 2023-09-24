@@ -8,6 +8,11 @@ const characterRepository = require( '../repositories/character.repository.js' )
 
 //#region Usecase
 
+/**
+ * Inserta el character especificado como nuevo character.
+ * @param {Character} character Datos para tomar las modificaciones.
+ * @returns El nuevo character con su nuevo id.
+ */
 const addCharacter = ( character ) => {
     const newCharacter = new Character();
 
