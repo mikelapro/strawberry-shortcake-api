@@ -19,6 +19,8 @@ router.get( '/', controllers.getApiInfo );
 // Endpoint: GET /characters - Ej: http://localhost:3000/characters
 router.get( '/characters', controllers.getCharacters ); 
 
+router.get( '/characters/summary', controllers.getCharactersSummary ); 
+
 // Endpoint: GET /characters/:id - Ej: http://localhost:3000/characters/65070e920d5d0ed33b70cf39
 router.get( '/characters/:id', controllers.getCharacter );
 

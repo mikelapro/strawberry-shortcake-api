@@ -6,7 +6,7 @@
 module.exports = class UnauthorizedError extends Error {
     // eslint-disable-next-line no-unused-vars
     constructor( message ) {
-        super( 'Para acceder a este enpoint se requiere un apiKey válida.' );
+        super( 'Para acceder a este enpoint se requiere un apiKey válida (uso interno o colaboradores).' );
         this.name = 'UnauthorizedError';
     }
 };

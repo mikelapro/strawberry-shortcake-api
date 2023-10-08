@@ -1,5 +1,6 @@
 //#region Imports
 
+const NotFoundError = require( '../errors/NotFoundError.js' );
 const characterRepository = require( '../repositories/character.repository.js' );
 
 //#endregion
@@ -12,9 +13,18 @@ const characterRepository = require( '../repositories/character.repository.js' )
  * @returns El character correspondiente al id.
  */
 const getCharacter = async ( id ) => {
-    const character = await characterRepository.getById( id );
+    try {
+        const character = await characterRepository.getById( id );
 
-    return character;
+        if ( character == undefined || character == null ) {
+            throw new NotFoundError( `Character ${id} not found` );
+        }
+
+        return character;
+
+    } catch ( error ) {
+        throw new NotFoundError( `Character ${id} not found` );
+    }
 };
 
 //#endregion

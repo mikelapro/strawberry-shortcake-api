@@ -2,6 +2,7 @@
 
 //#region Imports
 
+const asyncHandler = require( 'express-async-handler' ); // https://zellwk.com/blog/async-await-express.
 const usecases = require( '../usecases/index.js' );
 
 //#endregion
@@ -11,26 +12,49 @@ const usecases = require( '../usecases/index.js' );
 /**
  * Obtiene información del API.
  */
-const getApiInfo = async ( req, res ) => {
+const getApiInfo = asyncHandler( async ( req, res ) => {
     res.status( 200 ).json( usecases.getApiInfo() );
-};
+} );
 
 
 /**
  * Obtiene un array de characters.
  */
-const getCharacters = async ( req, res ) => {
-    res.status( 200 ).json( await usecases.getCharacters() );
-};
+const getCharacters = asyncHandler( async ( req, res ) => {
+    //res.status( 200 ).json( await usecases.getCharacters() );
+    res.status( 200 ).json( await usecases.getCharacters( req.query ) );
+} );
+
+/**
+ * Obtiene un array de characters.
+ */
+const getCharactersSummary = asyncHandler( async ( req, res ) => {
+    //res.status( 200 ).json( await usecases.getCharacters() );
+    res.status( 200 ).json( await usecases.getCharactersSummary() );
+} );
 
 /**
  * Obtiene el character correspondiente al id especificado.
  */
-const getCharacter = async ( req, res ) => {
+const getCharacter = asyncHandler( async ( req, res ) => {
+    //* NOTE: Si se lanzan errores desde una función async, no pasan por el middleware de 
+    //* express. Para que funcione correctamente hay 2 formas. Una es poner tode dentro de 
+    //* try/catch y usar el next (ver ejemplo abajo). La otra opción es usar la librería
+    //* express-async-handler (ver: https://zellwk.com/blog/async-await-express).
+
     // const id = parseInt( req.params.id ); // Convierte el parámetro id en number.
     const id = req.params.id;
     res.status( 200 ).json( await usecases.getCharacter( id ) );
-};
+} );
+
+// const getCharacter = asyncHandler( async ( req, res, next ) => {
+//     try {
+//         const id = req.params.id;
+//         res.status( 200 ).json( await usecases.getCharacter( id ) );
+//     } catch (error) {
+//         return next( error );
+//     }
+// } );
 
 /**
  * Inserta el character especificado como nuevo character.
@@ -51,27 +75,27 @@ const addCharacters = ( req, res ) => {
 /**
  * Elimina el character correspondiente al id especificado.
  */
-const deleteCharacter = async ( req, res ) => {
+const deleteCharacter = asyncHandler( async ( req, res ) => {
     usecases.checkApiKey( req.query.apiKey );
 
     // const id = parseInt( req.params.id );
     const id = req.params.id;
     await usecases.deleteCharacter( id );
     res.status( 204 ).send();
-};
+} );
 
 /**
  * Actualiza el character correspondiente al id especificado con los datos del character 
  * recibido (excepto el id).
  */
-const updateCharacter = async ( req, res ) => {
+const updateCharacter = asyncHandler( async ( req, res ) => {
     usecases.checkApiKey( req.query.apiKey );
 
     // const id = parseInt( req.params.id );
     const id = req.params.id;
 
     res.status( 200 ).json( await usecases.updateCharacter( id, req.body ) );
-};
+} );
 
 /**
  * We are the teapots. We love 418 status code. https://save418.com.
@@ -102,4 +126,5 @@ module.exports = {
     updateCharacter,
     imATeapot,
     notFound,
+    getCharactersSummary,
 };

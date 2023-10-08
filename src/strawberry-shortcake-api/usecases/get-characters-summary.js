@@ -10,12 +10,9 @@ const characterRepository = require( '../repositories/character.repository.js' )
  * Obtiene un array de characters.
  * @returns Array de characters.
  */
-const getCharacters = async ( query ) => {
-    // if( Object.entries( query ).length ){
-    // }
-
+const getCharactersSummary = async () => {
     //const characters = await characterRepository.getAll( {} );
-    const characters = await characterRepository.getAll( query );
+    const characters = await characterRepository.getAllSummary( {}, {'_id':1, 'name':1} );
 
     return characters;
 };
@@ -23,5 +20,5 @@ const getCharacters = async ( query ) => {
 //#endregion
 
 module.exports = {
-    getCharacters
+    getCharactersSummary
 };

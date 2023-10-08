@@ -4,7 +4,7 @@ index.js: Archivo pricipal del api.
         controllers: Contiene las funciones a ejecutar para cada endpoint.
             usecases: Contiene las funciones de la lógica de la app/api.
                 store: Contiene las funciones de escritura/lectura del estado de la app/api (los datos en memoria).
-                repositories: Controla la persistencia de datos en una base de datos.
+                repositories: Controla la persistencia (lectura y escritura) de datos en una base de datos.
     
     models: Clases de los objetos con los que se modela la app/api.
     middelwares: Funciones generales que se usan con expressjs. 

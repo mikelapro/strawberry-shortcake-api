@@ -28,12 +28,26 @@ const getById = async ( id ) => {
 };
 
 const getAll = async ( query ) => {
+    //https://stackoverflow.com/questions/1863399/mongodb-is-it-possible-to-make-a-case-insensitive-query
+    //https://www.delftstack.com/howto/mongodb/mongodb-case-insensitive-search/
+    // var query2 = {
+    //     name: /raspberry torte/i
+    // };
     const characters = await DataModel.find( query ).lean().exec(); // .limit(15)
     return characters;
 
-    // NOTE: .lean converts document to POJO (have el .toObject()).
+    //* NOTE: .lean converts document to POJO (have el .toObject()).
+    
     //const characterDocs = await DataModel.find( query ).exec(); 
     //var characters = characterDocs.map( ( model ) => model.toObject() );
+};
+
+const getAllSummary = async ( query, projection ) => {
+    const schema2 = new mongoose.Schema( {}, { strict: false, versionKey: false } ); // Mongoose Schema (sin schema, libre!).
+    const DataModel2 = mongoose.model( 'CaracterSummary', schema2, collectionName ); // Mongoose model (da operaciones de la base de datos).
+
+    const charactersNames = await DataModel2.find( query, projection ).lean().exec(); // .limit(15)
+    return charactersNames;
 };
 
 const update = async ( character ) => {
@@ -51,6 +65,7 @@ module.exports = {
     create,
     getById,
     getAll,
+    getAllSummary,
     update,
     remove
 };
