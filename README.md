@@ -56,7 +56,7 @@ Con filtro
     "species": "Human",
     
   },
-  // hola
+  //...
 ]
 ```
 
@@ -136,7 +136,7 @@ Obtiene un array de personajes solo con su id y su nombre.
 | 404 | NotFound | Al intentar obtener un personaje por id con id inexistente. |
 | 404 | NotFound | Al hacer un request a una ruta inexistente. |
 | 401 | Unauthorized | Al hacer un request a una ruta que requiere ApiKey sin el ApiKey correspondiente (uso interno o colaboradores). |
-| 418 | I'm a Teapot | Al hacer un post a ===/teapot=== 😜. |
+| 418 | I'm a Teapot | Al hacer un post a `/teapot` 😜. |
 
 
 ## Postman collection
