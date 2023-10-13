@@ -22,7 +22,7 @@ Con filtro
 
 ### Response
 
-```json
+```js
 [
   {
     "_id": "65070e920d5d0ed33b70cf39",
