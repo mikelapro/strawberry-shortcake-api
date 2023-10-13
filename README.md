@@ -56,7 +56,7 @@ Con filtro
     "species": "Human",
     
   },
-  //...
+  //..
 ]
 ```
 
@@ -145,4 +145,5 @@ TODO
 ## Contributing
 Si queres agregar personajes o agregar y/o modificar datos hace un pull request del archivo [characters.json](https://github.com/mikelapro/strawberry-shortcake-api/blob/main/src/strawberry-shortcake-api/models/characters.json) así lo agrego. Gracias!
 
-> **NOTA:** Este es mi primer proyecto de API con nodejs y express. Porfa, dame una ***estrella⭐***!
+> [!NOTE]
+> Este es mi primer proyecto de API con nodejs y express. Porfa, dame una ***estrella⭐***!
