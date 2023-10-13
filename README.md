@@ -24,7 +24,7 @@ Con filtro
 
 ```json
 [
-    {
+  {
     "_id": "65070e920d5d0ed33b70cf39",
     "name": "Apple Dumplin'",
     "nickName": "unknown",
@@ -35,27 +35,28 @@ Con filtro
     "eyeColor": "Grey-silver",
     "picture": "https://...",
     "friends": [
-        {
+      {
         "name": "Lemon Meringue",
         "gender": "Female",
         "species": "Human"
-        }
+      }
     ],
     "geneation": "2009",
     "pets": [
-        {
+      {
         "name": "Teatime Turtle",
         "gender": "Female",
         "species": "Turtle"
-        }
+      }
     ],
     "personality": "Apple is shown as a busy bodied ...",
     "appearance": "Apple has blonde hair and bangs...",
     "voiceActor": "Rebecca Shoichet (2009)",
     "summary": "Apple Dumplin' is a baby character from...",
     "species": "Human",
-    },
-    ...
+    
+  },
+  //...
 ]
 ```
 
@@ -101,7 +102,7 @@ Obtiene un personaje mediante su id.
     "species": "Human",
     
   },
-  ...
+  //...
 ]
 ```
 
@@ -123,8 +124,8 @@ Obtiene un array de personajes solo con su id y su nombre.
   {
     "_id": "65070e920d5d0ed33b70cf39",
     "name": "Apple Dumplin'",
-    
-  }...
+  },
+  //...
 ]
 ```
 ## HTTP status codes
@@ -135,7 +136,7 @@ Obtiene un array de personajes solo con su id y su nombre.
 | 404 | NotFound | Al intentar obtener un personaje por id con id inexistente. |
 | 404 | NotFound | Al hacer un request a una ruta inexistente. |
 | 401 | Unauthorized | Al hacer un request a una ruta que requiere ApiKey sin el ApiKey correspondiente (uso interno o colaboradores). |
-| 418 | I'm a Teapot | Al hacer un post a <mark>/teapot</mark> 😜. |
+| 418 | I'm a Teapot | Al hacer un post a ===/teapot=== 😜. |
 
 
 ## Postman collection
