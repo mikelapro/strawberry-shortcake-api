@@ -99,7 +99,7 @@ Obtiene un personaje mediante su id.
   "voiceActor": "Rebecca Shoichet (2009)",
   "summary": "Apple Dumplin' is a baby character from...",
   "species": "Human",
-  
+  ...
 }
 ```
 
