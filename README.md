@@ -8,7 +8,7 @@ La información fue recolectada manualmente de [Fandom wiki](https://strawberrys
 Base url (producción)
 https://strawberry-shortcake-api.onrender.com
 
-## Uso del API (endpoints).
+## Uso del API (endpoints)
 
 `GET characters`
 
