@@ -18,7 +18,7 @@ Todos
 >https://strawberry-shortcake-api.onrender.com/characters
 
 Con filtro
->https://strawberry-shortcake-api.onrender.com/characters?name=LemonMeringue
+>https://strawberry-shortcake-api.onrender.com/characters?theme=Apples
 
 ### Response
 
