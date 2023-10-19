@@ -1,4 +1,5 @@
 # Strawberry Shortcake API
+<img src=".src/strawberry-shortcake-api/characters.png?raw=true"/>
 Finalmente, la API REST para información sobre tus personajes favoritos de Strawberry Shortcake.
 
 La información fue recolectada manualmente de [Fandom wiki](https://strawberryshortcake.fandom.com/) (Strawberry Shortcake's Berry Bitty Adventures - Era 2009).
