@@ -44,7 +44,7 @@ const getAll = async ( query ) => {
 
 const getAllSummary = async ( query, projection ) => {
     const schema2 = new mongoose.Schema( {}, { strict: false, versionKey: false } ); // Mongoose Schema (sin schema, libre!).
-    const DataModel2 = mongoose.model( 'CaracterSummary', schema2, collectionName ); // Mongoose model (da operaciones de la base de datos).
+    const DataModel2 = mongoose.model( 'C', schema2, collectionName ); // Mongoose model (da operaciones de la base de datos).
 
     const charactersNames = await DataModel2.find( query, projection ).lean().exec(); // .limit(15)
     return charactersNames;
