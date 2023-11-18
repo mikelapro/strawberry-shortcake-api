@@ -16,6 +16,7 @@ index.js: Archivo pricipal del api.
 const express = require( 'express' );
 const { globalErrorHandler } = require( './middlewares/errors.js' );
 const db = require( './repositories/db-connection.js' );
+const cors = require( 'cors' );
 require( 'dotenv' ).config();
 
 //#endregion
@@ -41,6 +42,13 @@ api.use( require( './routes/routes.js' ) );
 // Middleware - Tratamiento de errores global.
 // *NOTE: Tiene que estar luego de los endpoints/routes.
 api.use( globalErrorHandler );
+
+// Configuración de expressjs para que permita CORS.
+// api.use( cors( {
+//     origin: '*' // Permite acceder al API desde cualquier lado.
+// } ) );
+// CORS = Cross-Origin Resource Sharing (Intercambio de Recursos de Origen Cruzado).
+api.use( cors() );
 
 // Oreja escuchando en el puerto {port} los request al api.
 api.listen( port, () => {
